@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { uploadPhoto, createUser } from './utils';
 
 export default async function asyncUploadUser(firstName, lastName) {
@@ -11,7 +10,7 @@ export default async function asyncUploadUser(firstName, lastName) {
       user
     };
   } catch (error) {
-    console.error('Error:', error);
+    console.log('Error:', error);
     return {
       photo: null,
       user: null
